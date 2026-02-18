@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Invitation to QS World University Rankings</title>
+    <style type="text/css">
+        /* Reset Styles */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; }
+        img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; }
+        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; font-family: Arial, sans-serif; }
+
+        /* General Styles */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* Mobile Responsive Styles */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+            .fluid {
+                width: 100% !important;
+                height: auto !important;
+                display: block;
+            }
+            .mobile-padding {
+                padding: 20px !important;
+            }
+            .button-block {
+                display: block !important;
+                width: auto !important;
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f6f6f6;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f6f6f6;">
+        <tr>
+            <td align="center" style="padding: 40px 10px;">
+                
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email-container" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                    
+                    <tr>
+                        <td bgcolor="#4CAF50" style="height: 6px;"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="mobile-padding" style="padding: 40px 40px 20px 40px; text-align: left; color: #333333; font-size: 16px; line-height: 1.6;">
+                            
+                            <h2 style="margin: 0 0 20px 0; font-size: 22px; color: #222222;">Dear <?= name ?>,</h2>
+                            
+                            <p style="margin: 0 0 15px 0;">Warm greetings from the University of Jember, Indonesia.</p>
+                            
+                            <p style="margin: 0 0 15px 0;">As a committed member of the international academic community, the University of Jember continues to strengthen its global engagement through research collaboration, scholarly exchange, and professional partnerships. In this spirit, we are reaching out to esteemed academics such as yourself who are connected to our institution through academic or professional networks.</p>
+
+                            <p style="margin: 0 0 15px 0;">We would like to invite you to contribute your scholarly perspective to the QS World University Rankings. As a recognised expert in your field, your academic judgment plays an important role in shaping global assessments of higher education quality. Insights from experienced scholars like you help prospective students make informed decisions and encourage universities worldwide to enhance academic standards.</p>
+                            
+                            <div style="background-color: #f9f9f9; border-left: 4px solid #4CAF50; padding: 15px; margin: 25px 0;">
+                                <p style="margin: 0 0 10px 0; font-weight: bold; color: #4CAF50;">Why Your Contribution Is Important</p>
+                                <p style="margin: 0; font-size: 15px;">The QS World University Rankings is built on evaluations from leading academics who understand innovation, rigor, and impact in research and teaching. Completing the survey—approximately <strong>10–15 minutes</strong>—allows your voice to be included alongside thousands of peers in one of the most widely referenced global university rankings.</p>
+                            </div>
+
+                            <p style="margin: 0 0 10px 0; font-weight: bold; font-size: 18px;">Our Request</p>
+                            
+                            <p style="margin: 0 0 15px 0;">The University of Jember seeks your consent to share your professional contact information (name, academic title, institutional affiliation, and email address) with <strong>QS (Quacquarelli Symonds).</strong> This will enable QS to formally invite you to participate in the <strong>2027 Academic Reputation Survey.</strong></p>
+                            
+                            <p style="margin: 0 0 10px 0;"><strong>If You Agree, You Can Expect:</strong></p>
+                            <ul style="padding-left: 20px; margin-top: 0; margin-bottom: 20px;">
+                                <li style="margin-bottom: 8px;">One official survey invitation email from rankings@qs.com (you may wish to add this address to your safe sender's list)</li>
+                                <li style="margin-bottom: 8px;">Up to three reminder emails, if necessary</li>
+                                <li style="margin-bottom: 8px;">A brief (10–15-minute) survey focused on universities within your academic discipline</li>
+                                <li style="margin-bottom: 8px;">Full confidentiality: responses are anonymous and reported only in aggregated form</li>
+                                <li style="margin-bottom: 8px;">No promotional messages or third-party use of your information</li>
+                                <li style="margin-bottom: 8px;">The option to decline participation at any stage, should you change your mind</li>
+                            </ul>
+
+                            <hr style="border: 0; border-top: 1px solid #eeeeee; margin: 30px 0;">
+
+                            <p style="margin: 0 0 10px 0; font-weight: bold;">Data Protection and Privacy</p>
+                            <p style="margin: 0 0 25px 0; font-size: 14px; color: #555;">Both the University of Jember and QS adhere to applicable data protection regulations. Your information will be used exclusively for this survey and managed with strict confidentiality.</p>
+
+                            <div style="text-align: center; margin: 40px 0;">
+                                <p style="margin: 0 0 15px 0; font-weight: bold;">TO PROVIDE CONSENT:</p>
+                                <p style="margin: 0 0 20px 0;">Kindly click the “Consent Form” button below and complete the accompanying short form at your earliest convenience, no later than <strong>20 February 2026.</strong></p>
+                                
+                                <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                    <tr>
+                                        <td align="center" style="border-radius: 5px;" bgcolor="#4CAF50">
+                                            <a href="https://www.google.com" target="_blank" style="font-size: 16px; font-family: Arial, sans-serif; color: #ffffff; text-decoration: none; padding: 14px 24px; border-radius: 5px; border: 1px solid #4CAF50; display: inline-block; font-weight: bold;">Consent Form &rarr;</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                                <p style="margin: 20px 0 0 0; font-size: 14px; color: #666;"><em>Your timely response will be greatly appreciated. Should you require any clarification or further information, please do not hesitate to contact us.</em></p>
+                            </div>
+
+                            <p style="font-size: 14px; color: #666; margin-top: 30px;">For further information about the ranking methodology, please visit:<br>
+                            <a href="https://www.topuniversities.com/qs-world-university-rankings/methodology" style="color: #4CAF50; word-break: break-all;">https://www.topuniversities.com/qs-world-university-rankings/methodology</a></p>
+
+                            <p style="margin-top: 30px;">Thank you for your continued engagement with the University of Jember and for considering this opportunity to share your expertise for the benefit of the global academic community.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 30px 40px; background-color: #f1f1f1; text-align: center; font-size: 13px; color: #777777; border-top: 1px solid #e0e0e0;">
+                            <p style="margin: 0 0 10px 0; font-weight: bold;">With kind regards,</p>
+                            <p style="margin: 0 0 10px 0;">—</p>
+                            <p style="margin: 0 0 5px 0; font-weight: bold; color: #333;">The University of Jember</p>
+                            <p style="margin: 0 0 5px 0;">Jl. Kalimantan No. 37</p>
+                            <p style="margin: 0 0 10px 0;">Jember 68121, East Java, Indonesia</p>
+                            <p style="margin: 0;">Email: <a href="mailto:ranking@unej.ac.id" style="color: #4CAF50; text-decoration: none;">ranking@unej.ac.id</a></p>
+                        </td>
+                    </tr>
+                </table>
+                </td>
+        </tr>
+    </table>
+</body>
+</html>
