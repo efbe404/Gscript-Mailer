@@ -55,7 +55,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email-container" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
                     
                     <tr>
-                        <td bgcolor="#4CAF50" style="height: 6px;"></td>
+                        <td bgcolor="#CC0000" style="height: 6px;"></td>
                     </tr>
 
                     <tr>
@@ -69,8 +69,8 @@
 
                             <p style="margin: 0 0 15px 0;">We would like to invite you to contribute your scholarly perspective to the QS World University Rankings. As a recognised expert in your field, your academic judgment plays an important role in shaping global assessments of higher education quality. Insights from experienced scholars like you help prospective students make informed decisions and encourage universities worldwide to enhance academic standards.</p>
                             
-                            <div style="background-color: #f9f9f9; border-left: 4px solid #4CAF50; padding: 15px; margin: 25px 0;">
-                                <p style="margin: 0 0 10px 0; font-weight: bold; color: #4CAF50;">Why Your Contribution Is Important</p>
+                            <div style="background-color: #f9f9f9; border-left: 4px solid #CC0000; padding: 15px; margin: 25px 0;">
+                                <p style="margin: 0 0 10px 0; font-weight: bold; color: #CC0000;">Why Your Contribution Is Important</p>
                                 <p style="margin: 0; font-size: 15px;">The QS World University Rankings is built on evaluations from leading academics who understand innovation, rigor, and impact in research and teaching. Completing the survey—approximately <strong>10–15 minutes</strong>—allows your voice to be included alongside thousands of peers in one of the most widely referenced global university rankings.</p>
                             </div>
 
@@ -99,8 +99,8 @@
                                 
                                 <table border="0" cellspacing="0" cellpadding="0" align="center">
                                     <tr>
-                                        <td align="center" style="border-radius: 5px;" bgcolor="#4CAF50">
-                                            <a href="https://www.google.com" target="_blank" style="font-size: 16px; font-family: Arial, sans-serif; color: #ffffff; text-decoration: none; padding: 14px 24px; border-radius: 5px; border: 1px solid #4CAF50; display: inline-block; font-weight: bold;">Consent Form &rarr;</a>
+                                        <td align="center" style="border-radius: 5px;" bgcolor="#CC0000">
+                                            <a href="https://www.google.com" target="_blank" style="font-size: 16px; font-family: Arial, sans-serif; color: #ffffff; text-decoration: none; padding: 14px 24px; border-radius: 5px; border: 1px solid #CC0000; display: inline-block; font-weight: bold;">Consent Form &rarr;</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -109,7 +109,7 @@
                             </div>
 
                             <p style="font-size: 14px; color: #666; margin-top: 30px;">For further information about the ranking methodology, please visit:<br>
-                            <a href="https://www.topuniversities.com/qs-world-university-rankings/methodology" style="color: #4CAF50; word-break: break-all;">https://www.topuniversities.com/qs-world-university-rankings/methodology</a></p>
+                            <a href="https://www.topuniversities.com/qs-world-university-rankings/methodology" style="color: #CC0000; word-break: break-all;">https://www.topuniversities.com/qs-world-university-rankings/methodology</a></p>
 
                             <p style="margin-top: 30px;">Thank you for your continued engagement with the University of Jember and for considering this opportunity to share your expertise for the benefit of the global academic community.</p>
                         </td>
@@ -122,7 +122,7 @@
                             <p style="margin: 0 0 5px 0; font-weight: bold; color: #333;">The University of Jember</p>
                             <p style="margin: 0 0 5px 0;">Jl. Kalimantan No. 37</p>
                             <p style="margin: 0 0 10px 0;">Jember 68121, East Java, Indonesia</p>
-                            <p style="margin: 0;">Email: <a href="mailto:ranking@unej.ac.id" style="color: #4CAF50; text-decoration: none;">ranking@unej.ac.id</a></p>
+                            <p style="margin: 0;">Email: <a href="mailto:ranking@unej.ac.id" style="color: #CC0000; text-decoration: none;">ranking@unej.ac.id</a></p>
                         </td>
                     </tr>
                 </table>
