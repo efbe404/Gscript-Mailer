@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Roboto', sans-serif; padding: 15px; color: #333; }
+      .form-group { margin-bottom: 15px; }
+      label { display: block; font-weight: 500; margin-bottom: 5px; font-size: 13px; }
+      input, select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+      button { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; width: 100%; font-weight: 500; }
+      button:disabled { background-color: #cccccc; cursor: not-allowed; }
+      button:hover:not(:disabled) { background-color: #45a049; }
+      #status { margin-top: 15px; font-size: 13px; color: #555; text-align: center; }
+      .spinner { display: inline-block; width: 12px; height: 12px; border: 2px solid #ccc; border-top-color: #333; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 5px; vertical-align: middle;}
+      @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+  </head>
+  <body>
+
+    <form id="emailForm" onsubmit="handleFormSubmit(this)">
+      
+      <div class="form-group">
+        <label for="subject">Email Subject</label>
+        <input type="text" id="subject" name="subject" required placeholder="e.g. Weekly Update">
+      </div>
+
+      <div class="form-group">
+        <label for="senderName">Sender Name</label>
+        <input type="text" id="senderName" name="senderName" required placeholder="e.g. John Doe">
+      </div>
+
+      <div class="form-group">
+        <label for="replyTo">Reply-To Email</label>
+        <input type="email" id="replyTo" name="replyTo" required placeholder="reply@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="templateSelect">Email Template</label>
+        <select id="templateSelect" name="templateSelect" required>
+          <option value="">Loading templates...</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fromEmail">Send From (Alias)</label>
+        <select id="fromEmail" name="fromEmail">
+          <option value="">Loading aliases...</option>
+        </select>
+      </div>
+
+      <button type="submit" id="btnSubmit">Send Emails</button>
+    </form>
+
+    <div id="status"></div>
+
+    <script>
+      // 1. Load Data on Startup (Aliases AND Templates)
+      window.onload = function() {
+        // Load Aliases
+        google.script.run
+          .withSuccessHandler(populateAliases)
+          .getUserAliases();
+
+        // Load Templates
+        google.script.run
+          .withSuccessHandler(populateTemplates)
+          .getTemplateList();
+      };
+
+      function populateAliases(emails) {
+        const select = document.getElementById("fromEmail");
+        select.innerHTML = "";
+        
+        if (!emails || emails.length === 0) {
+          const option = document.createElement("option");
+          option.value = "";
+          option.text = "Use Default Email";
+          select.appendChild(option);
+          return;
+        }
+
+        emails.forEach(function(email) {
+          const option = document.createElement("option");
+          option.value = email;
+          option.text = email;
+          select.appendChild(option);
+        });
+      }
+
+      // New function to populate Template dropdown
+      function populateTemplates(templates) {
+        const select = document.getElementById("templateSelect");
+        select.innerHTML = "";
+        
+        if (!templates || templates.length === 0) {
+           const option = document.createElement("option");
+           option.text = "No templates found in Code.gs";
+           select.appendChild(option);
+           return;
+        }
+
+        templates.forEach(function(tempName) {
+          const option = document.createElement("option");
+          option.value = tempName;
+          option.text = tempName;
+          select.appendChild(option);
+        });
+      }
+
+      // 2. Handle Form Submit
+      function handleFormSubmit(formObject) {
+        event.preventDefault(); 
+        const btn = document.getElementById("btnSubmit");
+        const statusDiv = document.getElementById("status");
+
+        btn.disabled = true;
+        btn.innerText = "Sending...";
+        statusDiv.innerHTML = '<span class="spinner"></span> Processing... please wait.';
+
+        google.script.run
+          .withSuccessHandler(function(msg) {
+            statusDiv.innerText = msg;
+            statusDiv.style.color = "green";
+            btn.disabled = false;
+            btn.innerText = "Send Emails";
+            formObject.reset();
+            // Reload dropdowns after reset
+            window.onload(); 
+          })
+          .withFailureHandler(function(err) {
+            statusDiv.innerText = "Error: " + err.message;
+            statusDiv.style.color = "red";
+            btn.disabled = false;
+            btn.innerText = "Send Emails";
+          })
+          .processEmails(formObject);
+      }
+    </script>
+  </body>
+</html>
